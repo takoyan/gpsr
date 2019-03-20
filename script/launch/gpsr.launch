@@ -1,0 +1,5 @@
+<launch>
+<node pkg='gpsr' name='ctrl' type='gpsr_ctrl.py'/>
+<node pkg='gpsr' name='recv' type='gpsr_recv.py'/>
+<node pkg='gpsr' name='deal' type='gpsr_deal.py'/>
+</launch>
