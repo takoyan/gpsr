@@ -100,6 +100,7 @@ def separate_Verb(sentence):
             
 def look_func(sentence, verb):
     ans=[]
+    print(result)
     if 'from' in sentence: #fromが文中にある場合
         index_of_from=get_Index_of_nextNoun(sentence, 'from')
         index_of_verb=get_Index_of_nextNoun(sentence, verb)
@@ -252,8 +253,9 @@ def gpsr_deal():
 
         while(sentence_num>=1):
             sentence=sent_li.pop(0)
+            print(sentence)
             sentence_num=len(sent_li)
-    
+            
             #sentence=check_And(sentence) #文中のandの有無を確認
             sentence=sentence.split()#単語で区切る
             
